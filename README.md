@@ -1,4 +1,4 @@
-# AI-Powered Skin Disease Detection Using Deep Learning
+# AI-Powered Dermatology Using Deep Learning
 
 ## Overview
 
@@ -20,7 +20,7 @@ The project uses the [HAM10000 dataset](https://www.kaggle.com/datasets/kmader/s
 1. *Clone the Repository:*
 
    bash
-   git clone https://github.com/sriramreddypendyala/skin-disease-detection.git
+   git clone https://github.com/VoremHrushiVorem/AI-powered-Dernatology-using-DL.git
    cd skin-disease-detection
    
 
