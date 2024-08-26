@@ -1,88 +1,102 @@
-AI-Powered Dermatology Using Deep Learning
-Overview
+# AI-Powered Skin Disease Detection Using Deep Learning
+
+## Overview
 
 This project aims to develop a deep learning model for the detection of skin diseases using images. The model leverages Convolutional Neural Networks (CNNs) to classify various skin conditions from images, providing a tool for early diagnosis and support for dermatological assessments.
-Features
 
-    Image Classification: Classifies images into one of seven skin disease categories.
-    Data Augmentation: Enhances model performance by artificially enlarging the training dataset.
-    Web Interface: Interactive web application built with Streamlit for real-time predictions.
-    High Accuracy: Utilizes advanced deep learning techniques for improved classification accuracy.
+## Features
 
-Dataset
+- *Image Classification:* Classifies images into one of seven skin disease categories.
+- *Data Augmentation:* Enhances model performance by artificially enlarging the training dataset.
+- *Web Interface:* Interactive web application built with Streamlit for real-time predictions.
+- *High Accuracy:* Utilizes advanced deep learning techniques for improved classification accuracy.
 
-The project uses the HAM10000 dataset which includes images of skin lesions with various labels. The dataset is used to train and test the model for accurate skin disease prediction.
-Installation
+## Dataset
 
-Clone the Repository:
+The project uses the [HAM10000 dataset](https://www.kaggle.com/datasets/kmader/skin-cancer-mnist-ham10000) which includes images of skin lesions with various labels. The dataset is used to train and test the model for accurate skin disease prediction.
 
-git clone https://github.com/VoremHrushiKiran/AI-powered-Dermatology-using-DL.git
-cd skin-disease-detection
+## Installation
 
-Install Dependencies:
+1. *Clone the Repository:*
 
-Install the required libraries using:
+   bash
+   git clone https://github.com/sriramreddypendyala/skin-disease-detection.git
+   cd skin-disease-detection
+   
 
-pip install tensorflow keras opencv-python-headless streamlit numpy pandas matplotlib seaborn pillow scikit-learn
+2. *Install Dependencies:*
 
-Usage
-Training the Model
+   Install the required libraries using:
 
-Prepare the Data:
+   bash
+   pip install tensorflow keras opencv-python-headless streamlit numpy pandas matplotlib seaborn pillow scikit-learn
+   
 
-Ensure the dataset is in the correct path as specified in the code.
+## Usage
 
-Run Training Script:
+### Training the Model
 
-Execute the following command to train the model:
+1. *Prepare the Data:*
 
-python train_model.py
+   Ensure the dataset is in the correct path as specified in the code.
 
-    This will save the trained model as Model.h5.
+2. *Run Training Script:*
 
-Running the Web Application
+   Execute the following command to train the model:
 
-Start the Streamlit App:
+   bash
+   python train_model.py
+   
 
-Run the following command to start the web application:
+   This will save the trained model as Model.h5.
 
-streamlit run app.py
+### Running the Web Application
 
-    Upload an Image:
+1. *Start the Streamlit App:*
 
-    Navigate to the Streamlit app in your browser and upload an image to get a skin disease prediction.
+   Run the following command to start the web application:
 
-Code Explanation
+   bash
+   streamlit run app.py
+   
 
-    Data Visualization:
-        Utilizes seaborn and matplotlib to visualize dataset distributions.
+2. *Upload an Image:*
 
-    Data Preprocessing:
-        Reads and preprocesses the image data using PIL and cv2.
+   Navigate to the Streamlit app in your browser and upload an image to get a skin disease prediction.
 
-    Model Architecture:
-        Defines a Convolutional Neural Network (CNN) using tensorflow.keras with layers like Conv2D, MaxPooling2D, Dropout, and Dense.
+## Code Explanation
 
-    Training and Evaluation:
-        Trains the model using model.fit() and evaluates its performance.
+- *Data Visualization:*
+  - Utilizes seaborn and matplotlib to visualize dataset distributions.
 
-    Web Application:
-        Implements a web interface using Streamlit to allow users to upload images and receive predictions.
+- *Data Preprocessing:*
+  - Reads and preprocesses the image data using PIL and cv2.
 
-Files
+- *Model Architecture:*
+  - Defines a Convolutional Neural Network (CNN) using tensorflow.keras with layers like Conv2D, MaxPooling2D, Dropout, and Dense.
 
-    train_model.py: Script for training the deep learning model.
-    app.py: Streamlit application for real-time predictions.
-    Model.h5: Trained model file.
+- *Training and Evaluation:*
+  - Trains the model using model.fit() and evaluates its performance.
 
-Contributing
+- *Web Application:*
+  - Implements a web interface using Streamlit to allow users to upload images and receive predictions.
+
+## Files
+
+- *train_model.py:* Script for training the deep learning model.
+- *app.py:* Streamlit application for real-time predictions.
+- *Model.h5:* Trained model file.
+
+## Contributing
 
 Feel free to fork the repository, create a pull request, or open an issue if you have any suggestions or improvements.
-License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
-Acknowledgments
+## License
 
-    Keras Documentation
-    TensorFlow Documentation
-    Streamlit Documentation
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+
+- [Keras Documentation](https://keras.io/)
+- [TensorFlow Documentation](https://www.tensorflow.org/)
+- [Streamlit Documentation](https://docs.streamlit.io/)
